@@ -1,0 +1,54 @@
+User enters the application
+
+	List user-id []
+
+	List 'Friends' online
+
+	Display Account Name
+
+Request user's access privacy to enable 'precise location'
+
+If user has "location service" disabled
+
+	send pop-up message for notification
+
+Store 'precise location' 
+
+	Enable auto-save > recurring every 2 seconds in background
+
+Return 'precise location'
+
+Create empty list labeled 'upcoming events' 
+
+Suggest upcoming events within the 0 to 5 miles range.
+
+	Query 'Event ID' to current matching 'Event City'
+
+	If 'Event City' is the same as 'precise location' list the event names
+
+	If no events are found matching 'precise location' read "No Events Found"
+
+Return 'upcoming events' list
+
+Display calendar for user to select a specific date or date range of values as input
+
+Sort 'Event Name' results by 'start date' by ascending or descending order
+
+	Default to most recent
+
+	Let user select filter for listing
+
+Return 'start date' input
+
+Create 'Recommended' list for 'Event Names'
+
+While not at the end of the 'upcoming events' list...
+
+Display 'Event Attendees' of selected 'Event Name'
+
+	Recommend 'Event Name' if values in 'Event Attendees' match 'Friends' list of user
+
+	Sort 'Event Name' by "most/least" attendees 
+
+Return 'upcoming events' list
+	
